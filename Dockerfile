@@ -11,7 +11,7 @@ RUN apt-get update
 RUN apt-get install -y nginx
 
 # Copy application files into the container's NGINX HTML directory
-COPY MiniProject1 /var/www/html/
+COPY src /var/www/html/
 
 # Expose port 80 to allow outside connections
 EXPOSE 80
